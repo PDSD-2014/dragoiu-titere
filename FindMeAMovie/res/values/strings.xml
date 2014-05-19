@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FindMeAMovie</string>
+    <string name="app_label">Find a movie</string>
+    <string name="search_hint">Enter something to search</string>
+    <string name="search_title">Enter something to search</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_details">MovieDetailsActivity</string>
+    <string name="synopsis_label">Synopsis</string>
+
+</resources>
