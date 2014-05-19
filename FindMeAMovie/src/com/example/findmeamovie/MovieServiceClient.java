@@ -11,7 +11,14 @@ public class MovieServiceClient {
 	
 	String GetSearchByTermResponse(String searchTerm,AsyncListener listener)
 	{
-		String LinkWithData = SearchByTermLink.replace("SEARCH_TERM", searchTerm);
+		String query="";
+		try {
+			query = URLEncoder.encode(searchTerm, "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String LinkWithData = SearchByTermLink.replace("SEARCH_TERM", query);
 		GetResponseTask searchTask = new GetResponseTask(listener);
 		searchTask.execute(LinkWithData);
 		
